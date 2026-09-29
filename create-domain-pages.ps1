@@ -45,7 +45,7 @@ foreach ($domain in $domains) {
   <a class="card-link" href="{{ '/$domainSlug/$articleSlug/' | relative_url }}">
     <div class="card-title">$title</div>
     <div class="card-description">$description</div>
-    <div class="card-action">Read →</div>
+    <div class="card-action">Read More</div>
   </a>
 </div>
 "@

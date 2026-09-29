@@ -16,7 +16,7 @@ permalink: /operations/
   <a class="card-link" href="{{ '/operations/inventory-management/' | relative_url }}">
     <div class="card-title">Inventory management</div>
     <div class="card-description">Generate the same revenue while using fewer resources or getting more revenue from every rupee spent on raw materials</div>
-    <div class="card-action">Read â†’</div>
+    <div class="card-action">Read More</div>
   </a>
 </div>
 </div>
