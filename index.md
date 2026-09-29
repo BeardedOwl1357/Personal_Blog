@@ -7,9 +7,7 @@ title: Home
 
 A collection of things I'm learning, understanding, and trying to remember.
 
-<h2>Categories</h2>
-
-<ul class="topic-list">
+<div class="card-grid">
 
 {% assign domains = site.articles | group_by: "domain" %}
 
@@ -17,16 +15,22 @@ A collection of things I'm learning, understanding, and trying to remember.
 
 {% assign domain_slug = domain.name | downcase | replace: " ", "-" %}
 
-<li>
-  <a href="{{ '/' | append: domain_slug | append: '/' | relative_url }}">
-    {{ domain.name }}
-  </a>
+<a class="card" href="{{ '/' | append: domain_slug | append: '/' | relative_url }}">
 
-  <div class="description">
-    {{ domain.size }} articles
+  <div class="card-title">
+    {{ domain.name }}
   </div>
-</li>
+
+  <div class="card-description">
+    {{ domain.size }} article{% unless domain.size == 1 %}s{% endunless %}
+  </div>
+
+  <div class="card-action">
+    Explore →
+  </div>
+
+</a>
 
 {% endfor %}
 
-</ul>
+</div>

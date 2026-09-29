@@ -1,7 +1,6 @@
 $ArticlesRoot = Join-Path $PSScriptRoot "_articles"
 $DomainsRoot = Join-Path $PSScriptRoot "_domains"
 
-# Create _domains if it doesn't exist
 if (-not (Test-Path $DomainsRoot)) {
     New-Item -ItemType Directory -Path $DomainsRoot -Force | Out-Null
 }
@@ -15,7 +14,7 @@ foreach ($domain in $domains) {
     $articles = Get-ChildItem $domain.FullName -Filter "*.md" -File |
         Sort-Object Name
 
-    $articleLinks = ""
+    $articleCards = ""
 
     foreach ($article in $articles) {
 
@@ -41,17 +40,23 @@ foreach ($domain in $domains) {
             $article.Name
         )
 
-        $articleLinks += @"
+        $articleCards += @"
 
-<li>
-  <a href="{{ '/$domainSlug/$articleSlug/' | relative_url }}">
+<a class="card" href="{{ '/$domainSlug/$articleSlug/' | relative_url }}">
+
+  <div class="card-title">
     $title
-  </a>
+  </div>
 
-  <div class="description">
+  <div class="card-description">
     $description
   </div>
-</li>
+
+  <div class="card-action">
+    Read →
+  </div>
+
+</a>
 
 "@
     }
@@ -66,11 +71,16 @@ title: "$domainTitle"
 permalink: /$domainSlug/
 ---
 
+<p class="breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  / $domainTitle
+</p>
+
 <h1>$domainTitle</h1>
 
-<ul class="topic-list">
-$articleLinks
-</ul>
+<div class="card-grid">
+$articleCards
+</div>
 "@
 
     $outputFile = Join-Path $DomainsRoot "$domainSlug.md"
