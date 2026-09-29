@@ -89,22 +89,22 @@ permalink: /finance/
 </li>
 
 <li>
-  <a href="{{ '/finance/goodwill-impairment/' | relative_url }}">
-    Goodwill Impairment
-  </a>
-
-  <div class="description">
-    Impairment = Asset Write-down
-  </div>
-</li>
-
-<li>
   <a href="{{ '/finance/goodwill/' | relative_url }}">
     Goodwill
   </a>
 
   <div class="description">
     Goodwill = Fair Value (Purchase Price) - Book Value
+  </div>
+</li>
+
+<li>
+  <a href="{{ '/finance/goodwill-impairment/' | relative_url }}">
+    Goodwill Impairment
+  </a>
+
+  <div class="description">
+    Impairment = Asset Write-down
   </div>
 </li>
 

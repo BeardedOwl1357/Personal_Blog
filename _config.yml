@@ -1,10 +1,14 @@
-title: Personal Notes
+title: Personal Blog
 description: A personal knowledge base
+
 baseurl: "/Personal_Blog"
 url: "https://BeardedOwl1357.github.io"
 
 collections:
   articles:
+    output: true
+
+  domains:
     output: true
 
 defaults:
@@ -14,7 +18,14 @@ defaults:
     values:
       layout: "default"
 
+  - scope:
+      path: ""
+      type: "domains"
+    values:
+      layout: "domain"
+
 markdown: kramdown
+
 kramdown:
   input: GFM
 

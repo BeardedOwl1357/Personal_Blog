@@ -1,7 +1,7 @@
 Import-Module ImportExcel
 
 $ExcelFile = Join-Path $PSScriptRoot "Quotes.xlsx"
-$NotesRoot = Join-Path $PSScriptRoot "_notes"
+$ArticlesRoot = Join-Path $PSScriptRoot "_articles"
 
 function Convert-ToSlug {
     param (
@@ -29,18 +29,6 @@ function Convert-ToSlug {
     return $slug
 }
 
-function Escape-Yaml {
-    param (
-        [string]$Text
-    )
-
-    if ($null -eq $Text) {
-        return ""
-    }
-
-    return $Text.Replace('\', '\\').Replace('"', '\"')
-}
-
 function Ensure-Folder {
     param (
         [string]$Path
@@ -63,6 +51,9 @@ Write-Host ""
 
 $rows = Import-Excel -Path $ExcelFile -WorksheetName "Knowledge"
 
+$createdCount = 0
+$skippedCount = 0
+
 foreach ($row in $rows) {
 
     $domain = [string]$row.Domain
@@ -79,6 +70,7 @@ foreach ($row in $rows) {
         continue
     }
 
+    # Domain and Topic are required
     if (
         [string]::IsNullOrWhiteSpace($domain) -or
         [string]::IsNullOrWhiteSpace($topic)
@@ -90,10 +82,19 @@ foreach ($row in $rows) {
     $domainSlug = Convert-ToSlug $domain
     $topicSlug = Convert-ToSlug $topic
 
-    $domainFolder = Join-Path $NotesRoot $domainSlug
+    $domainFolder = Join-Path $ArticlesRoot $domainSlug
     $filePath = Join-Path $domainFolder "$topicSlug.md"
 
+    # Create domain folder if it doesn't exist
     Ensure-Folder $domainFolder
+
+    # IMPORTANT:
+    # Never overwrite an existing article.
+    if (Test-Path $filePath) {
+        Write-Host "Skipped (already exists): $filePath" -ForegroundColor Yellow
+        $skippedCount++
+        continue
+    }
 
     $content = @"
 ---
@@ -124,9 +125,13 @@ $explanation
         [System.Text.UTF8Encoding]::new($false)
     )
 
-    Write-Host "Created: $filePath"
+    Write-Host "Created: $filePath" -ForegroundColor Green
+    $createdCount++
 }
 
 Write-Host ""
 Write-Host "Done."
+Write-Host ""
+Write-Host "Created: $createdCount article(s)" -ForegroundColor Green
+Write-Host "Skipped: $skippedCount existing article(s)" -ForegroundColor Yellow
 Write-Host ""

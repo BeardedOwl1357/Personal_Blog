@@ -1,4 +1,10 @@
 $ArticlesRoot = Join-Path $PSScriptRoot "_articles"
+$DomainsRoot = Join-Path $PSScriptRoot "_domains"
+
+# Create _domains if it doesn't exist
+if (-not (Test-Path $DomainsRoot)) {
+    New-Item -ItemType Directory -Path $DomainsRoot -Force | Out-Null
+}
 
 $domains = Get-ChildItem $ArticlesRoot -Directory
 
@@ -6,7 +12,8 @@ foreach ($domain in $domains) {
 
     $domainSlug = $domain.Name
 
-    $articles = Get-ChildItem $domain.FullName -Filter "*.md"
+    $articles = Get-ChildItem $domain.FullName -Filter "*.md" -File |
+        Sort-Object Name
 
     $articleLinks = ""
 
@@ -66,7 +73,7 @@ $articleLinks
 </ul>
 "@
 
-    $outputFile = Join-Path $PSScriptRoot "$domainSlug.md"
+    $outputFile = Join-Path $DomainsRoot "$domainSlug.md"
 
     [System.IO.File]::WriteAllText(
         $outputFile,
@@ -74,5 +81,8 @@ $articleLinks
         [System.Text.UTF8Encoding]::new($false)
     )
 
-    Write-Host "Created: $outputFile"
+    Write-Host "Generated: $outputFile" -ForegroundColor Green
 }
+
+Write-Host ""
+Write-Host "Domain pages generated successfully." -ForegroundColor Cyan
