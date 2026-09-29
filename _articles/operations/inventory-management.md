@@ -3,8 +3,7 @@ title: "Inventory management"
 domain: "Operations"
 topic: "Inventory management"
 category: "Waste tracking and optimzation for restaurants"
-description: "Generate the same revenue while using fewer resources or getting more revenue from every rupee spent on raw materials".
-"
+description: "Generate the same revenue while using fewer resources or getting more revenue from every rupee spent on raw materials"
 permalink: /operations/inventory-management/
 ---
 
