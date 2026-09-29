@@ -28,7 +28,7 @@ A collection of things I'm learning, understanding, and trying to remember.
     </div>
 
     <div class="card-action">
-      Explore →
+      Explore
     </div>
   </a>
 </div>

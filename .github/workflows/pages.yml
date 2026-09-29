@@ -23,6 +23,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Generate domain pages
+        shell: pwsh
+        run: ./create-domain-pages.ps1
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

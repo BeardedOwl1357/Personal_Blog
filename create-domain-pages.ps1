@@ -1,9 +1,12 @@
 $ArticlesRoot = Join-Path $PSScriptRoot "_articles"
 $DomainsRoot = Join-Path $PSScriptRoot "_domains"
 
-if (-not (Test-Path $DomainsRoot)) {
-    New-Item -ItemType Directory -Path $DomainsRoot -Force | Out-Null
+# Recreate generated domain pages from scratch
+if (Test-Path $DomainsRoot) {
+    Remove-Item $DomainsRoot -Recurse -Force
 }
+
+New-Item -ItemType Directory -Path $DomainsRoot -Force | Out-Null
 
 $domains = Get-ChildItem $ArticlesRoot -Directory
 
@@ -45,7 +48,7 @@ foreach ($domain in $domains) {
   <a class="card-link" href="{{ '/$domainSlug/$articleSlug/' | relative_url }}">
     <div class="card-title">$title</div>
     <div class="card-description">$description</div>
-    <div class="card-action">Read More</div>
+    <div class="card-action">Read →</div>
   </a>
 </div>
 "@
