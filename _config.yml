@@ -1,0 +1,25 @@
+title: Personal Notes
+description: A personal knowledge base
+baseurl: "/personal-notes"
+url: "https://BeardedOwl1357.github.io"
+
+collections:
+  notes:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "default"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
