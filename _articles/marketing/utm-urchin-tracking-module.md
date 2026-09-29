@@ -3,7 +3,7 @@ title: "UTM (Urchin Tracking Module)"
 domain: "Marketing"
 topic: "UTM (Urchin Tracking Module)"
 category: "Digital marketing"
-description: "Snippet of text added to a web link that tracks website traffic, letting marketers see exactly which specific post, ad, or platform drove a visitor to their site. Like `&utm_medium=web3x&utm_name=web3xcss&utm_source=share&utm_term=1`"
+description: "Snippet of text added to a web link that tracks website traffic, letting marketers see exactly which specific post, ad, or platform drove a visitor to their site. "
 permalink: /marketing/utm-urchin-tracking-module/
 ---
 
