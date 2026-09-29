@@ -125,14 +125,9 @@ blockquote {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  min-height: 170px;
-  padding: 24px;
   border: 1px solid var(--border);
   border-radius: 12px;
-  color: var(--text);
-  text-decoration: none;
+  background: var(--background);
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease,
@@ -143,6 +138,15 @@ blockquote {
   transform: translateY(-2px);
   border-color: #cccccc;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+  padding: 24px;
+  color: var(--text);
+  text-decoration: none;
 }
 
 .card-title {
@@ -166,18 +170,12 @@ blockquote {
   font-weight: 500;
 }
 
-.breadcrumb {
-  margin-bottom: 32px;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
 @media (max-width: 600px) {
   .card-grid {
     grid-template-columns: 1fr;
   }
 
-  .card {
+  .card-link {
     min-height: 150px;
   }
 }
