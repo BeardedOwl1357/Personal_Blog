@@ -31,12 +31,6 @@ permalink: /finance/
     <div class="card-action">Read More</div>
   </a>
 </div><div class="card">
-  <a class="card-link" href="{{ '/finance/cac/' | relative_url }}">
-    <div class="card-title">cac</div>
-    <div class="card-description"></div>
-    <div class="card-action">Read More</div>
-  </a>
-</div><div class="card">
   <a class="card-link" href="{{ '/finance/core-concept-of-business-and-assets/' | relative_url }}">
     <div class="card-title">Core Concept of Business & Assets</div>
     <div class="card-description">Assets: Resources that help us earn money</div>
@@ -45,7 +39,7 @@ permalink: /finance/
 </div><div class="card">
   <a class="card-link" href="{{ '/finance/debentures/' | relative_url }}">
     <div class="card-title">Debentures</div>
-    <div class="card-description">A formal **</div>
+    <div class="card-description">A formal **I.O.U. note** issued by a private / public companies. Instead of bank giving them a loan, normal people can buy debentures for money</div>
     <div class="card-action">Read More</div>
   </a>
 </div><div class="card">

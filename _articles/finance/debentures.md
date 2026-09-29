@@ -3,7 +3,7 @@ title: "Debentures"
 domain: "Finance"
 topic: "Debentures"
 category: "Debt Instruments"
-description: "A formal **"I.O.U." note** issued by a private / public companies. Instead of bank giving them a loan, normal people can buy debentures for money"
+description: "A formal **I.O.U. note** issued by a private / public companies. Instead of bank giving them a loan, normal people can buy debentures for money"
 permalink: /finance/debentures/
 ---
 
