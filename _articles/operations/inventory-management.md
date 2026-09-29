@@ -3,7 +3,7 @@ title: "Inventory management"
 domain: "Operations"
 topic: "Inventory management"
 category: "Waste tracking and optimzation for restaurants"
-description: "**TL;DR:** measuring and reducing wastage**. If the increase is instead driven by higher market prices, the restaurant can respond through **ingredient substitution, selective price or portion changes, and recipe/product optimization**. The key objective is simple: **generate the same revenue while using fewer resources or getting more revenue from every rupee spent on raw materials.**
+description: "Generate the same revenue while using fewer resources or getting more revenue from every rupee spent on raw materials".
 "
 permalink: /operations/inventory-management/
 ---

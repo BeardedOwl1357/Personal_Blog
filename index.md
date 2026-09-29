@@ -3,36 +3,30 @@ layout: default
 title: Home
 ---
 
-# Personal Notes
+# Personal Blog
 
 A collection of things I'm learning, understanding, and trying to remember.
 
-{% assign domains = site.notes | group_by: "domain" %}
-
-{% for domain in domains %}
-
-<h2>{{ domain.name }}</h2>
+<h2>Categories</h2>
 
 <ul class="topic-list">
 
-{% assign topics = domain.items | sort: "title" %}
+{% assign domains = site.articles | group_by: "domain" %}
 
-{% for note in topics %}
+{% for domain in domains %}
+
+{% assign domain_slug = domain.name | downcase | replace: " ", "-" %}
 
 <li>
-  <a href="{{ note.url | relative_url }}">
-    {{ note.title }}
+  <a href="{{ '/' | append: domain_slug | append: '/' | relative_url }}">
+    {{ domain.name }}
   </a>
 
-  {% if note.description %}
   <div class="description">
-    {{ note.description }}
+    {{ domain.size }} articles
   </div>
-  {% endif %}
 </li>
 
 {% endfor %}
 
 </ul>
-
-{% endfor %}

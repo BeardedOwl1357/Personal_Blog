@@ -4,14 +4,13 @@ baseurl: "/Personal_Blog"
 url: "https://BeardedOwl1357.github.io"
 
 collections:
-  notes:
+  articles:
     output: true
-    permalink: /:path/
 
 defaults:
   - scope:
       path: ""
-      type: "notes"
+      type: "articles"
     values:
       layout: "default"
 
