@@ -9,7 +9,13 @@ permalink: /finance/journal-entries/
 
 # Journal Entries
 
-Source : [https://www.youtube.com/watch?v=Di-zoaiMlX4&list=PLaAhQ2ofZZRCJIUbTjeUXx4JoZ7CyGHr3&index=9](https://www.youtube.com/watch?v=Di-zoaiMlX4&list=PLaAhQ2ofZZRCJIUbTjeUXx4JoZ7CyGHr3&index=9)
+Sources
+- [https://www.youtube.com/watch?v=Di-zoaiMlX4&list=PLaAhQ2ofZZRCJIUbTjeUXx4JoZ7CyGHr3&index=9](https://www.youtube.com/watch?v=Di-zoaiMlX4&list=PLaAhQ2ofZZRCJIUbTjeUXx4JoZ7CyGHr3&index=9)
+
+- Not done / covered
+  - [https://www.youtube.com/watch?v=sd754xHErg0&list=PLaAhQ2ofZZRD7Q_liYTL0H3d8xj8a6rwF&index=25](https://www.youtube.com/watch?v=sd754xHErg0&list=PLaAhQ2ofZZRD7Q_liYTL0H3d8xj8a6rwF&index=25)
+  - [https://www.youtube.com/watch?v=lVMe0vlJIA4&list=PLaAhQ2ofZZRD7Q_liYTL0H3d8xj8a6rwF&index=26](https://www.youtube.com/watch?v=lVMe0vlJIA4&list=PLaAhQ2ofZZRD7Q_liYTL0H3d8xj8a6rwF&index=26)
+  - [https://www.youtube.com/watch?v=sKekp-ncuRQ&list=PLaAhQ2ofZZRD7Q_liYTL0H3d8xj8a6rwF&index=27](https://www.youtube.com/watch?v=sKekp-ncuRQ&list=PLaAhQ2ofZZRD7Q_liYTL0H3d8xj8a6rwF&index=27)
 
 
 ## Definition / Formula
