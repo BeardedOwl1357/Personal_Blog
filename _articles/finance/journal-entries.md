@@ -50,7 +50,6 @@ A few pointers
 ## Samples
 The following table summarizes the accounting transactions discussed in the video, detailing the journal entry and the reasoning based on the Golden Rules of Accounting:
 
-markdown
 | Transaction | Journal Entry | Explanation |
 | :--- | :--- | :--- |
 | Started business with capital | Cash A/c Dr. To Capital A/c | Cash is an asset coming into the business (Real A/c: Debit what comes in); Capital represents the owner's investment (Personal A/c: Credit the giver). |
