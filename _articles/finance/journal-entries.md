@@ -9,7 +9,7 @@ permalink: /finance/journal-entries/
 
 # Journal Entries
 
-Source : https://www.youtube.com/watch?v=Di-zoaiMlX4&list=PLaAhQ2ofZZRCJIUbTjeUXx4JoZ7CyGHr3&index=9
+Source : [https://www.youtube.com/watch?v=Di-zoaiMlX4&list=PLaAhQ2ofZZRCJIUbTjeUXx4JoZ7CyGHr3&index=9](https://www.youtube.com/watch?v=Di-zoaiMlX4&list=PLaAhQ2ofZZRCJIUbTjeUXx4JoZ7CyGHr3&index=9)
 
 
 ## Definition / Formula
@@ -46,6 +46,20 @@ A few pointers
 ## Debtor and Creditor
 - A debtor is a person or business that owes money to your company
 - A creditor is a person or business that your company owes money to
+
+## Journal Entry
+
+- Original entry book. Transactions are recorded in a chronological / sequential order
+- Special journals : Journal that records a specific type / category of transactions
+- Structure
+	- Date
+	- Particular : The transaction
+	- LF (Ledger Folio) : The page number of entry in ledger book
+		- Journal : First source of transaction
+		- Ledger : Classified into relevant accounts
+		- Journal shows a sale, ledger shows that the sale happened in Sales Account
+	- Dr Amount : Debited Amount
+	- Cr Amount : Credited Amount
 
 ## Samples
 The following table summarizes the accounting transactions discussed in the video, detailing the journal entry and the reasoning based on the Golden Rules of Accounting:
