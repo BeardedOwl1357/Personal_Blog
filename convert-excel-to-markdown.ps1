@@ -19,6 +19,7 @@ function Convert-ToSlug {
 
     # Replace apostrophes
     $slug = $slug -replace "'", ''
+    $slug = $slug -replace '"', "'"
 
     # Replace anything that is not a letter or number with "-"
     $slug = $slug -replace '[^a-z0-9]+', '-'
