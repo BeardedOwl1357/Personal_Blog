@@ -1,10 +1,10 @@
 ---
 title: "IT Enablement"
-domain: "MIS (Business and tech)"
+domain: "Management Information Systems"
 topic: "IT Enablement"
 category: "Basics"
 description: "The core idea is that technology implementation must begin with business purpose, not with software or infrastructure. Decide the mission; next, choose the strategy to win; then define the moves; select the tools; and finally ensure the system can run them reliably"
-permalink: /mis-business-and-tech/it-enablement/
+permalink: /management-information-systems/it-enablement/
 ---
 
 # IT Enablement
@@ -15,7 +15,7 @@ The core idea is that technology implementation must begin with business purpose
 
 ## Explanation
 
- The following sequence must be kept in mind (in the exact same order) when we are implementing technology in business
+The following sequence must be kept in mind (in the exact same order) when we are implementing technology in business
 
 ```
 Purpose -> Theory of business -> Process -> Software -> Infrastructure
