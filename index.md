@@ -15,7 +15,7 @@ A collection of things I'm learning, understanding, and trying to remember.
 
 {% if domain.name and domain.name != "" %}
 
-{% assign domain_slug = domain.name | downcase | replace: " ", "-" %}
+{% assign domain_slug = domain.name | downcase | replace: " ", "-" | replace: "(", "-" | replace: ")", "-" %}
 
 <div class="card">
   <a class="card-link" href="{{ '/' | append: domain_slug | append: '/' | relative_url }}">
@@ -26,11 +26,12 @@ A collection of things I'm learning, understanding, and trying to remember.
     <div class="card-description">
       {{ domain.size }} article{% unless domain.size == 1 %}s{% endunless %}
     </div>
-
+    
     <div class="card-action">
       Explore
     </div>
-  </a>
+
+</a>
 </div>
 
 {% endif %}
