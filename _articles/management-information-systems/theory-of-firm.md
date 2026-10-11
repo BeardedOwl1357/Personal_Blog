@@ -3,7 +3,7 @@ title: "Theory of firm"
 domain: "Management Information Systems"
 topic: "Theory of firm"
 category: "Basics"
-description: "In "The Nature of the Firm" (1937), Coase asked why companies exist at all if markets are
+description: "In 'The Nature of the Firm' (1937), Coase asked why companies exist at all if markets are
 efficient. His answer: using the market has costs"
 permalink: /management-information-systems/theory-of-firm/
 ---
@@ -12,7 +12,7 @@ permalink: /management-information-systems/theory-of-firm/
 
 ## Definition / Formula
 
-In "The Nature of the Firm" (1937), Coase asked why companies exist at all if markets are
+In 'The Nature of the Firm' (1937), Coase asked why companies exist at all if markets are
 efficient. His answer: using the market has costs
 
 ## Explanation
