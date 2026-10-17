@@ -30,4 +30,4 @@ When you sit down to work, your only objective is to finish the current numbered
 ### Celebrate the Micro-Builds
 Modern LEGO sets give you a sense of accomplishment quickly; finishing Bag 1 usually rewards you with a completed minifig or the base of a vehicle. In your work, acknowledge the completion of each small bag. This releases dopamine, building the positive momentum you need to open the next bag.
 
-https://lnkd.in/p/d_qAJzJS
+[Read this post for more information](https://lnkd.in/p/d_qAJzJS)
