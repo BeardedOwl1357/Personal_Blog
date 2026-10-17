@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,12 +44,29 @@
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
 
   mermaid.initialize({
-    startOnLoad: true,
+    startOnLoad: false,
     theme: 'default',
     securityLevel: 'strict'
+  });
+
+  // Convert Jekyll's Mermaid code blocks into Mermaid containers.
+  document.querySelectorAll(
+    'pre > code.language-mermaid, pre > code.lang-mermaid'
+  ).forEach((code) => {
+    const pre = code.parentElement;
+    const diagram = document.createElement('pre');
+
+    diagram.className = 'mermaid';
+    diagram.textContent = code.textContent;
+
+    pre.replaceWith(diagram);
+  });
+
+  // Render all Mermaid diagrams on the page.
+  await mermaid.run({
+    querySelector: 'pre.mermaid'
   });
 </script>
 
 </body>
 </html>
-
