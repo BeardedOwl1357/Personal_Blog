@@ -15,12 +15,6 @@ Sampling is the process of selecting a subset of a population to draw conclusion
 
 ## Explanation
 
-## Overview
-
-Sampling is the process of selecting a subset of a population to draw conclusions about the whole. It saves time, cost, and effort while making research practical. The key methods include stratified sampling, which takes samples from every group; cluster sampling, which studies selected groups; and multi-stage sampling, which selects samples in multiple steps, from larger groups to smaller units.
-
-## Explanation
-
 Cluster sampling and stratified sampling differ mainly in what you select and why you select it. In stratified sampling, you divide the population into groups and sample from every group, while in cluster sampling, you divide the population into groups and select only some groups for study.
 
 Imagine XLRI has 1,000 students across different programs and years. You want to survey students about campus life, so you need a way to select a manageable sample.

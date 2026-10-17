@@ -1,7 +1,9 @@
+
 Import-Module ImportExcel
 
 $ExcelFile = Join-Path $PSScriptRoot "Quotes.xlsx"
 $ArticlesRoot = Join-Path $PSScriptRoot "_articles"
+$BaseUrl = "https://beardedowl1357.github.io/Personal_Blog"
 
 function Convert-ToSlug {
     param (
@@ -17,14 +19,16 @@ function Convert-ToSlug {
     # Replace ampersands with "and"
     $slug = $slug -replace '&', 'and'
 
-    # Replace apostrophes
+    # Remove apostrophes
     $slug = $slug -replace "'", ''
+
+    # Replace double quotes with apostrophes
     $slug = $slug -replace '"', "'"
 
-    # Replace anything that is not a letter or number with "-"
+    # Replace non-alphanumeric characters with hyphens
     $slug = $slug -replace '[^a-z0-9]+', '-'
 
-    # Remove leading/trailing hyphens
+    # Remove leading and trailing hyphens
     $slug = $slug.Trim('-')
 
     return $slug
@@ -86,13 +90,18 @@ foreach ($row in $rows) {
     $domainFolder = Join-Path $ArticlesRoot $domainSlug
     $filePath = Join-Path $domainFolder "$topicSlug.md"
 
+    # Construct the expected hosted URL
+    $articleUrl = "$BaseUrl/$domainSlug/$topicSlug/"
+
     # Create domain folder if it doesn't exist
     Ensure-Folder $domainFolder
 
-    # IMPORTANT:
-    # Never overwrite an existing article.
+    # Never overwrite an existing article
     if (Test-Path $filePath) {
         Write-Host "Skipped (already exists): $filePath" -ForegroundColor Yellow
+        Write-Host "URL: $articleUrl" -ForegroundColor Cyan
+        Write-Host ""
+
         $skippedCount++
         continue
     }
@@ -127,12 +136,19 @@ $explanation
     )
 
     Write-Host "Created: $filePath" -ForegroundColor Green
+    Write-Host "URL: $articleUrl" -ForegroundColor Cyan
+    Write-Host ""
+
     $createdCount++
 }
 
-Write-Host ""
+Write-Host "========================================"
 Write-Host "Done."
+Write-Host "========================================"
 Write-Host ""
 Write-Host "Created: $createdCount article(s)" -ForegroundColor Green
 Write-Host "Skipped: $skippedCount existing article(s)" -ForegroundColor Yellow
+Write-Host ""
+Write-Host "Note: URLs are expected published addresses."
+Write-Host "Pages become available after GitHub Pages deployment."
 Write-Host ""
