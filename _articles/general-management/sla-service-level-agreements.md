@@ -3,11 +3,7 @@ title: "SLA (Service Level Agreements)"
 domain: "General Management"
 topic: "SLA (Service Level Agreements)"
 category: "Reliability"
-description: "An SLA stands for a Service Level Agreement. It is a formal, binding contract or agreement between a service provider and a customer (or between two internal departments) that defines the exact level of service expected to be delivered
-
-Anchored by four core pillars: a defined **scope of services**, measurable **performance metrics** (such as a 99.9% uptime baseline or tier-based helpdesk response deadlines), clearly outlined **provider and customer obligations**, and pre-negotiated **penalties and remedies** (like service credits or termination clauses).
-
-For complex ecosystems, organizations leverage a **multi-level SLA** to bundle various commitments into a single framework. This structured methodology breaks agreements down into three cohesive layers: **corporate-level policies** that apply globally, **customer-level agreements** customized for specific client groups, and **service-level metrics** tied directly to individual tools or assets. Together, these frameworks establish high accountability, streamline operations, and minimize redundancy across diverse workflows."
+description: "An SLA stands for a Service Level Agreement. It is a formal, binding contract or agreement between a service provider and a customer (or between two internal departments) that defines the exact level of service expected to be delivered"
 permalink: /general-management/sla-service-level-agreements/
 ---
 
@@ -17,11 +13,11 @@ permalink: /general-management/sla-service-level-agreements/
 
 An SLA stands for a Service Level Agreement. It is a formal, binding contract or agreement between a service provider and a customer (or between two internal departments) that defines the exact level of service expected to be delivered
 
+## Explanation
+
 Anchored by four core pillars: a defined **scope of services**, measurable **performance metrics** (such as a 99.9% uptime baseline or tier-based helpdesk response deadlines), clearly outlined **provider and customer obligations**, and pre-negotiated **penalties and remedies** (like service credits or termination clauses).
 
 For complex ecosystems, organizations leverage a **multi-level SLA** to bundle various commitments into a single framework. This structured methodology breaks agreements down into three cohesive layers: **corporate-level policies** that apply globally, **customer-level agreements** customized for specific client groups, and **service-level metrics** tied directly to individual tools or assets. Together, these frameworks establish high accountability, streamline operations, and minimize redundancy across diverse workflows.
-
-## Explanation
 
 An SLA typically outlines:
 - **Scope of Services:** What is included and what is excluded.
