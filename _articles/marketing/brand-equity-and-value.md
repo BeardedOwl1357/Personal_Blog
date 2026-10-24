@@ -1,6 +1,6 @@
 ---
 title: "Brand equity and value"
-domain: "Maketing"
+domain: "Marketing"
 topic: "Brand equity and value"
 category: "Generic"
 description: "A brand is a psychological promise, Brand Equity is how deeply your audience believes that promise, and Brand Value is the financial reward you get for keeping it. Consumers face intense decision fatigue every day. If someone is buying a new smartphone, they don't have the time or energy to read the specs, compare different modes, or benchmark the processors. Instead, their brain uses a shortcut: _Apple means premium and easy to use. Samsung means cutting-edge tech._"
