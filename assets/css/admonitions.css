@@ -1,0 +1,26 @@
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-left: 0.25em solid;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+}
+.markdown-alert > p:first-child { margin-top: 0; }
+.markdown-alert > p:last-child { margin-bottom: 0; }
+.alert-title {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.markdown-alert-note { border-left-color: #0969da; }
+.markdown-alert-note .alert-title { color: #0969da; }
+.markdown-alert-tip { border-left-color: #1a7f37; }
+.markdown-alert-tip .alert-title { color: #1a7f37; }
+.markdown-alert-important { border-left-color: #8250df; }
+.markdown-alert-important .alert-title { color: #8250df; }
+.markdown-alert-warning { border-left-color: #9a6700; }
+.markdown-alert-warning .alert-title { color: #9a6700; }
+.markdown-alert-caution { border-left-color: #cf222e; }
+.markdown-alert-caution .alert-title { color: #cf222e; }

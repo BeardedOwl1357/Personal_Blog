@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +16,8 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/markdown_table.css' | relative_url }}">
+  <!-- Admonition styles modularized -->
+  <link rel="stylesheet" href="{{ '/assets/css/admonitions.css' | relative_url }}">
 </head>
 
 <body>
@@ -39,34 +40,9 @@
   </div>
 </footer>
 
-<!-- Mermaid diagram support -->
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-
-  mermaid.initialize({
-    startOnLoad: false,
-    theme: 'default',
-    securityLevel: 'strict'
-  });
-
-  // Convert Jekyll's Mermaid code blocks into Mermaid containers.
-  document.querySelectorAll(
-    'pre > code.language-mermaid, pre > code.lang-mermaid'
-  ).forEach((code) => {
-    const pre = code.parentElement;
-    const diagram = document.createElement('pre');
-
-    diagram.className = 'mermaid';
-    diagram.textContent = code.textContent;
-
-    pre.replaceWith(diagram);
-  });
-
-  // Render all Mermaid diagrams on the page.
-  await mermaid.run({
-    querySelector: 'pre.mermaid'
-  });
-</script>
+<!-- Modular Scripts -->
+{% include custom-scripts/admonitions.html %}
+{% include custom-scripts/mermaid.html %}
 
 </body>
 </html>
